@@ -1,0 +1,293 @@
+  * {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* background-color: black;  */
+  color: white;
+}  
+   body{
+    color: white;
+    background-color: black;   
+}   
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2%;
+  height: 111px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+}
+
+nav > ul > li {
+  margin-inline: 10px;
+  /* padding-inline: 10px; */
+}
+nav > div > i {
+  margin-inline: 15px;
+}
+
+/* About us */
+
+#hero {
+  width: 100%;
+  background-image: url(./Asset/pizza1\ 1.jpg);
+  height: 90vh;
+  background-size: cover;
+  padding-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#hero > h2 {
+  width: 902px;
+  height: 215px;
+  color: #fff;
+  /* text-align: center; */
+  font-size: 101px;
+  font-weight: 700;
+  line-height: 108.5px; /* 107.426% */
+  letter-spacing: 9.09px;
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
+}
+.horizontal-line {
+  width: 586px;
+  height: 13px;
+  background: #f24c4c;
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.25);
+  /* margin-top: 100px;
+margin-bottom: 100px; */
+}
+#hero > p {
+  width: 599px;
+  /* height: 325px;   */
+  color: #fff;
+  font-size: 25px;
+  font-family: Ruda;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.25px;
+}
+/* ................... */
+#about-us,#menu,#gallary,#found-us {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  color: white;
+  background-color: black;   
+  
+}
+
+/* .............. */
+
+#about-us > h2, #menu > h2 ,#gallary>h2,#found-us>h2{
+  color: #fff;
+  /* text-align: center;  */
+  /* font-family: Quattrocento; */
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.about-us-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.about-us-div > p {
+  width: 40%;
+  color: #fff;
+
+  font-family: Ruda;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.25px;
+}
+
+
+                /* menu section */
+#menu>p{
+    width: 80vw;
+    text-align: justify;
+    color: #FFF;
+font-family: Ruda;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 160% */
+letter-spacing: 2.25px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+#menu-div{
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin-bottom: 50px;
+}
+.menu-item>div{
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    margin-left: 20px;
+}
+.menu-item>div>h5{
+    color: #F2C94C;
+
+font-family: Ruda;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 0px; /* 0% */
+}
+.menu-item>div>p{
+    color: #FFF;
+
+font-family: Ruda;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 1.8px;
+}
+
+                /* carousel */
+                #my-carousel{
+                    width: 85vw;
+                    margin: auto;
+                    overflow: hidden;
+                    padding-top: 100px;
+                    background-color: black;
+                    color: white;
+                }
+                #my-carousel img{
+                    /* width: 100%; */
+                    /* width: 85vw; */
+                    height: 70vh;
+                   
+                }
+                #my-indicators button{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+
+                /* Gallary */
+#gallary{
+    width: 100%;
+    margin: auto;
+}
+#gallary-div{
+    width: 85vw;
+    display: grid;
+    /* margin: auto; */
+    /* border: 2px solid yellow;  */
+    grid-template-columns:  4fr 1fr 1fr;
+    grid-template-rows: repeat(6,100px);
+    margin-top: 80px;
+    grid-template-areas: 
+    "a b c"
+    "a b c"
+    "a d c"
+    "a d f"
+    "a e f"
+    "a e f";
+    gap: 10px;
+}
+#gallary-div>img{
+    height: 100%;
+    width: 100%;
+}
+.grid-img-a{
+    grid-area: a;
+}
+.grid-img-b{
+    grid-area: b;
+}
+.grid-img-c{
+    grid-area: c;
+}
+.grid-img-d{
+    grid-area: d;
+}
+.grid-img-e{
+    grid-area: e;
+}
+.grid-img-f{
+    grid-area: f;
+}
+
+            /* find us  */
+#found-us-div{
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+.left-content,.footer-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.left-content>p,.contact-details>p{
+    color: #FFF;
+font-family: Ruda;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 160% */
+letter-spacing: 2.25px;
+}
+.loc-details,.contact-details{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.loc-details>P,.loc-details>div>P{
+    color: #FFF;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 200% */
+letter-spacing: 1.8px;
+}
+
+            /* footer */
+footer{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    padding-inline: 100px;
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+}
